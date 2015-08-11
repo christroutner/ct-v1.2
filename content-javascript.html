@@ -1,0 +1,90 @@
+<section>
+
+  <p>These days JavaScript is <b>everywhere</b>. I started learning JavaScript in earnest at Xerox while developing control and UI software for the text fixtures I designed. At Integra I maintained and expanded their testing scripts that perform automated testing on their flagship product. These tests were written in JavaScript and executed through the Windows Script interpreter, wScript.</p> 
+
+  <p>I have used JavaScript to create animated and Responsive webpages (like this one) for several years, but began to spend significant effort in 2013 expanding my knowledge of the jQuery and Node.js libraries, as well as AJAX protocols. There has been an explosion of cheap, networked, 32-bit mini-computers like the Raspberri Pi and Arduino, as well as the growing trend of the Internet of Things (IoT). I believe the jQuery library provides the tools to build awesome web-based user interfaces for IoT devices and Node.js allows that UI to control the embedded device. I am currently playing with a Raspberry Pi to develop an embedded webserver that can be remotely controlled. 
+  </p>
+  
+  <div class="panel-group" id="panelJavaScript" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingTesting">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" href="#collapseTesting" aria-expanded="false" aria-controls="collapseTesting">
+            Testing and Automation
+          </a>
+        </h4>
+      </div>
+      <div id="collapseTesting" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTesting">
+        <div class="panel-body">
+          <p>At Xerox I wrote test scripts in JavaScript that would run functional tests on the circuit board sub-components of their printer products. As the
+            circuit boards would reach the end of the assembly line, prior to final assembly, they would be put into a test fixture. A bed of needles would be
+            lowered onto the circuit board and connect it a computer on the test fixture. I designed the interface hardware, programmed the embedded microcontrollers in C, and wrote the
+            functional testing software on the computer in JavaScript. The software would put the circuit board through its paces and catalog any unexpected
+            behavior. Tests were prioritized and results uploaded to a central server for data mining. These fixtures were essential for Xerox's six-sigma
+            management strategy and warranty insurance research.</p>
+
+            <p>My position at Integra was as a software tester. About half my job was manual testing and the other half I spent on maintaining their suite
+            of automated testing scripts, written in JavaScript. During my time there, I added dozens of test cases, made several improvements to the utility
+            libraries, and assisted in the design and build out of a Build Verification Test (BVT) program that automatically validated the nightly build.</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingjQuery">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" href="#collapsejQuery" aria-expanded="false" aria-controls="collapsejQuery">
+            jQuery, AJAX, and Google Maps
+          </a>
+        </h4>
+      </div>
+      <div id="collapsejQuery" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingjQuery">
+        <div class="panel-body">
+          <p>
+            I've been interested in GPS and Google Maps for several years. Over the last two years I've taught myself the ins and outs of the Google Map API.
+            Over the last year I've also been playing with a SPOT Satellite tracking device and learning how to integrate it with a Google Map. Below is
+            an application I built to display a sliding window of GPS data from my SPOT tracker. I use it to keep track of my sailing journeys and to share my
+            location with readers of <a href="http://sanjuansufficiency.com" target="_blank">my blog</a>. 
+            <br></br>
+          </p>
+
+          <!-- Move javascript to separate file -->
+          <script type="text/javascript" src="js/SPOTTracker.js"></script>
+
+          <p>
+            <label for="amount">Date range:</label>
+            <input type="text" id="amount" readonly 
+              style="border:0; color:#f6931f; font-weight:bold;">
+          </p>
+
+          <div id="slider"></div>
+          <br></br>
+
+          <div id="map_canvas" style="width:550px; height:550px; border: 2px solid darkgreen" class=''></div>
+
+          <link rel="stylesheet" href="js/jquery-ui.min.css">
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingNode">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" href="#collapseNode" aria-expanded="false" aria-controls="collapseNode">
+            Node.js and Embedded Web Server
+          </a>
+        </h4>
+      </div>
+      <div id="collapseNode" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNode">
+        <div class="panel-body">
+           
+          <p>The SPOT tracker data is published as an XML file. Only the last 50 data points are available. As new data comes in, old data is discarded. I wrote an application in Node that downloads the XML file and parses the data into a CSV file. This data is then retrieved by the by the client-side JavaScript map running in this browser.</p>
+          
+          <p>The Node application I wrote to download the data originally ran on a <a href="https://www.sparkfun.com/products/12994" target="_blank">Raspberry Pi</a> embedded computer, running Debian Linux. I’ve since adapted the code and moved it to a virtual server in the Amazon EC2 cloud running Windows 2008 Server. This code is responsible for downloading the tracking data once per day and appending new data to a CSV file stored on the server.
+
+          <br></br>
+          <a href="http://christroutner.com/files/SPOT005.js" target="_blank">Node Source Code</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
