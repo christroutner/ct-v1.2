@@ -35,7 +35,7 @@
         <h2 class="panel-title">
           <a class="collapsed" role="button" data-toggle="collapse" href="#collapsejQuery" aria-expanded="false" aria-controls="collapsejQuery">
             <i class='glyphicon glyphicon-plus'></i>
-            jQuery, AJAX, and Google Maps
+            Front-End: jQuery, AJAX, and Google Maps
           </a>
         </h2>
       </div>
@@ -43,31 +43,30 @@
         <div class="panel-body">
           <p>
             I've been interested in GPS and Google Maps for several years. Over the last two years I've taught myself the ins and outs of the Google Map API.
-            Over the last year I've also been playing with a SPOT Satellite tracking device and learning how to integrate it with a Google Map. Below is
-            an application I built to display a sliding window of GPS data from my SPOT tracker. I use it to keep track of my sailing journeys and to share my
-            location with readers of <a href="http://sanjuansufficiency.com" target="_blank">my blog</a>. 
-            <br></br>
+            Over the last year I've also been playing with a SPOT Satellite tracking device and learning how to integrate it with a Google Map. 
+            Below are two example of Google Map application prototypes I've built. Both have a front-end and back-end component. 
+            <ul>
+              <li>
+              <a href="SPOTMap.html" target="_blank">SPOT Tracker Map</a> - I wrote this application to display a sliding window of GPS data from my SPOT tracker. I use it to keep track 
+                of my sailing journeys and to share my location with readers of <a href="http://sanjuansufficiency.com" target="_blank">my 
+                sailing blog</a>.
+              </li>
+              <br>
+              <ul><li><a href="https://github.com/christroutner/SPOT-JS" target="_blank">View Github Repository</a></li></ul>
+              <br>
+              <li>
+              Collaborative Geo-Data - This application allows people to interactively update a common database of geographical data. I had intended
+                to use this application to allow other boaters to share information about anchorages in remote locations and souces of wild food
+                nearby. Unfortunatly <a href="https://activecaptain.com/X.php" target="_blank">Active Captain</a> came up with this idea before me. I decided to release the code as Open Source 
+                under the GNUv2 licence.
+              </li>
+              <br>
+              <ul><li><a href="https://github.com/christroutner/crowdsourced_geo_data" target="_blank">View Github Repository</a></li></ul>
+            </ul>
+            
+            
           </p>
 
-          <!-- Load the JavaScript libraries needed for the map. 
-          <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>    
-          <link href="js/jquery-ui.min.css" media="all" rel="stylesheet" />
-          <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-          <script type="text/javascript" src="js/jquery.csv-0.71.js"></script>
-          <script type="text/javascript" src="js/SPOTTracker.js"></script>
--->
-          <p>
-            <label for="amount">Date range:</label>
-            <input type="text" id="amount" readonly 
-              style="border:0; color:#f6931f; font-weight:bold;">
-          </p>
-
-          <div id="slider"></div>
-          <br></br>
-
-          <div id="map_canvas" style="width:550px; height:550px; border: 2px solid darkgreen" class=''></div>
-
-          <link rel="stylesheet" href="js/jquery-ui.min.css">
         </div>
       </div>
     </div>
