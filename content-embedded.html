@@ -6,10 +6,11 @@
   <p>Throughout my career, I have contributed to several Open Source Projects, and have recently become fascinated with the potential applications using the <a href="https://www.sparkfun.com/products/12994" target="_blank">Raspberry Pi</a> as an embedded web server.</p>
 
   <div class="panel-group" id="panelEmbedded" role="tablist" aria-multiselectable="true">
-    <div class="panel panel-default">
+    <div class="panel panel-default" ng-init="PC.initCollapseIcon('#collapseTractionControl')">
       <div class="panel-heading" role="tab" id="headingTractionControl">
         <h2 class="panel-title">
           <a role="button" data-toggle="collapse" href="#collapseTractionControl" aria-expanded="false" aria-controls="collapseTractionControl">
+            <i class='glyphicon glyphicon-plus'></i>
             Off-Road Traction Control System
           </a>
         </h2>
@@ -32,10 +33,11 @@
         </div>
       </div>
     </div>
-    <div class="panel panel-default">
+    <div class="panel panel-default"  ng-init="PC.initCollapseIcon('#collapseWaterHeater')">
       <div class="panel-heading" role="tab" id="headingWaterHeater">
         <h2 class="panel-title">
           <a class="collapsed" role="button" data-toggle="collapse" href="#collapseWaterHeater" aria-expanded="false" aria-controls="collapseWaterHeater">
+            <i class='glyphicon glyphicon-plus'></i>
             Solar Water Heater Controller
           </a>
         </h2>
@@ -59,10 +61,11 @@
         </div>
       </div>
     </div>
-    <div class="panel panel-default">
+    <div class="panel panel-default" ng-init="PC.initCollapseIcon('#collapseAVR')">
       <div class="panel-heading" role="tab" id="headingAVR">
         <h2 class="panel-title">
           <a class="collapsed" role="button" data-toggle="collapse" href="#collapseAVR" aria-expanded="false" aria-controls="collapseAVR">
+            <i class='glyphicon glyphicon-plus'></i>
             AVR C-Code
           </a>
         </h2>
@@ -84,10 +87,11 @@
         </div>
       </div>
     </div>
-    <div class="panel panel-default">
+    <div class="panel panel-default" ng-init="PC.initCollapseIcon('#collapseRobots')">
       <div class="panel-heading" role="tab" id="headingRobots">
         <h2 class="panel-title">
           <a class="collapsed" role="button" data-toggle="collapse" href="#collapseRobots" aria-expanded="false" aria-controls="collapseRobots">
+            <i class='glyphicon glyphicon-plus'></i>
             Robots
           </a>
         </h2>
@@ -98,10 +102,11 @@
           <p>This section contains details on the robots I build during college. Superlative was the name of my most complex robot, built in 2004 in partnership with a Mechnical Engineer friend of mine. It was built to compete in the 2005 PDXBot Mini-Sumo Competition hosted by <a href="http://www.portlandrobotics.org/">Portland Area Robotics Society</a>. It won first place. The Model-T and Mini-T were two prototype kit robots I built when trying launch my own buisiness (<a href="./files/myrobot_bplan.pdf">buisiness plan</a>).</p>
 
           <div class="panel-group" id="panelRobots2" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
+            <div class="panel panel-default" ng-init="PC.initCollapseIcon('#collapseSuperlative')">
               <div class="panel-heading" role="tab" id="headingSuperlative">
                 <h3 class="panel-title">
                   <a role="button" data-toggle="collapse" href="#collapseSuperlative" aria-expanded="false" aria-controls="collapseSuperlative">
+                    <i class='glyphicon glyphicon-plus'></i>
                     Superlative
                   </a>
                 </h3>
@@ -125,10 +130,11 @@
                 </div>
               </div>
             </div>
-            <div class="panel panel-default">
+            <div class="panel panel-default" ng-init="PC.initCollapseIcon('#collapseModelt')">
               <div class="panel-heading" role="tab" id="headingModelt">
                 <h3 class="panel-title">
                   <a role="button" data-toggle="collapse" href="#collapseModelt" aria-expanded="false" aria-controls="collapseModelt">
+                    <i class='glyphicon glyphicon-plus'></i>
                     Model-T
                   </a>
                 </h3>
@@ -157,10 +163,11 @@
                 </div>
               </div>
             </div>
-            <div class="panel panel-default">
+            <div class="panel panel-default" ng-init="PC.initCollapseIcon('#collapseMinit')">
               <div class="panel-heading" role="tab" id="headingMinit">
                 <h3 class="panel-title">
                   <a role="button" data-toggle="collapse" href="#collapseMinit" aria-expanded="false" aria-controls="collapseMinit">
+                    <i class='glyphicon glyphicon-plus'></i>
                     Mini-T
                   </a>
                 </h3>
@@ -179,10 +186,11 @@
         </div>        
       </div>
     </div>
-    <div class="panel panel-default">
+    <div class="panel panel-default" ng-init="PC.initCollapseIcon('#collapseOpenSource')">
       <div class="panel-heading" role="tab" id="headingOpenSource">
         <h2 class="panel-title">
           <a class="collapsed" role="button" data-toggle="collapse" href="#collapseOpenSource" aria-expanded="false" aria-controls="collapseOpenSource">
+            <i class='glyphicon glyphicon-plus'></i>
             Open Source
           </a>
         </h2>
@@ -192,10 +200,11 @@
           <p>I started the Free Charge Controller project in 2010. More recently, I have been donating my time to the Freedombox project to test their software on my Raspberry Pi.</p>
                                   
           <div class="panel-group" id="panelOpenSource" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
+            <div class="panel panel-default" ng-init="PC.initCollapseIcon('#collapseFreedombox')">
               <div class="panel-heading" role="tab" id="headingFreedombox">
                 <h3 class="panel-title">
                   <a role="button" data-toggle="collapse" href="#collapseFreedombox" aria-expanded="false" aria-controls="collapseFreedombox">
+                    <i class='glyphicon glyphicon-plus'></i>
                     Freedombox
                   </a>
                 </h3>
@@ -206,10 +215,11 @@
                 </div>
               </div>
             </div>
-            <div class="panel panel-default">
+            <div class="panel panel-default" ng-init="PC.initCollapseIcon('#collapseChargeController')">
               <div class="panel-heading" role="tab" id="headingChargeController">
                 <h3 class="panel-title">
                   <a role="button" data-toggle="collapse" href="#collapseChargeController" aria-expanded="false" aria-controls="collapseChargeController">
+                    <i class='glyphicon glyphicon-plus'></i>
                     Free Charge Controller
                   </a>
                 </h3>

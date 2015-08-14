@@ -136,10 +136,12 @@
 
         <div class='col-md-10'>
           <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
+            <!-- <div ng-controller='panelController as panelCtrl' ng-init='tab=1' class="panel panel-default"> -->
+            <div class="panel panel-default" ng-init="PC.initCollapseIcon('#collapseAbout')">
               <div class="panel-heading" role="tab" id="headingAbout">
                 <h1 class="panel-title">
-                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseAbout" aria-expanded="true" aria-controls="collapseAbout">
+                  <a role="button" id="titleOverview" data-toggle="collapse" data-parent="#accordion" href="#collapseAbout" aria-expanded="true" aria-controls="collapseAbout">
+                    <i class='glyphicon glyphicon-minus'></i>
                     Overview
                   </a>
                 </h1>
@@ -150,10 +152,11 @@
                 </div>
               </div>
             </div>
-            <div class="panel panel-default">
+            <div class="panel panel-default" ng-init="PC.initCollapseIcon('#collapseJavaScript')">
               <div class="panel-heading" role="tab" id="headingJavaScript">
                 <h1 class="panel-title">
                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseJavaScript" aria-expanded="false" aria-controls="collapseJavaScript">
+                    <i class='glyphicon glyphicon-plus'></i>
                     JavaScript
                   </a>
                 </h1>
@@ -164,10 +167,11 @@
                 </div>
               </div>
             </div>
-            <div class="panel panel-default">
+            <div class="panel panel-default" ng-init="PC.initCollapseIcon('#collapseEmbedded')">
               <div class="panel-heading" role="tab" id="headingEmbedded">
                 <h1 class="panel-title">
                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEmbedded" aria-expanded="false" aria-controls="collapseEmbedded">
+                    <i class='glyphicon glyphicon-plus'></i>
                     Embedded Software
                   </a>
                 </h1>
@@ -178,10 +182,11 @@
                 </div>
               </div>
             </div>
-            <div class="panel panel-default">
+            <div class="panel panel-default" ng-init="PC.initCollapseIcon('#collapseCircuits')">
               <div class="panel-heading" role="tab" id="headingCircuits">
                 <h1 class="panel-title">
                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseCircuits" aria-expanded="false" aria-controls="collapseCircuits">
+                    <i class='glyphicon glyphicon-plus'></i>
                     Electrical Engineering
                   </a>
                 </h1>
@@ -316,6 +321,8 @@
   <script src="js/angular.min.js"></script>
   <script src="js/app.js"></script>
 
+
+
   <!--  This snippet used to collapse hamburger menu on extra-small screens.
         Source: http://bit.ly/1N1M6r4 -->
   <script type="text/javascript">
@@ -325,5 +332,28 @@
       }
     }); 
   </script>
+
+<!--
+  <script type="text/javascript">
+      $(document).ready(function(){
+        //debugger;
+        $("#collapseAbout").on("hide.bs.collapse", function(){
+          
+          var glyf = $($(this).parent()[0]).find('.glyphicon')[0] //Retrieve the glyphicon used on this title.
+          $(glyf).removeClass('glyphicon-minus');
+          $(glyf).addClass('glyphicon-plus');
+          
+        });
+        $("#collapseAbout").on("show.bs.collapse", function(){
+          
+          var glyf = $($(this).parent()[0]).find('.glyphicon')[0] //Retrieve the glyphicon used on this title.
+          $(glyf).removeClass('glyphicon-plus');
+          $(glyf).addClass('glyphicon-minus');
+          
+        });
+      });
+  </script>
+-->
+
 </body>
 </html>
