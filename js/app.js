@@ -114,7 +114,13 @@
     };
   });
 
-  
+  app.directive('illustrateSpotTracker', function() {
+    //debugger;
+    return {
+      restrict: 'E',
+      templateUrl: '../files/SPOT-BackEnd-Illustration.html'
+    };
+  });
 
 
   /*

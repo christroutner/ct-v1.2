@@ -20,7 +20,7 @@ function loadmap() {
     var MaxDate = new Date();   //The largest value the slider can take.
     var week = 1000*60*60*24*7; //millisecond in one week.
 
-    $( "#amount" ).val( "Initializing..." );
+    $( "#amount" ).val( "Connecting to server..." );
 
     //Load the map into the 'map_canvas' div element.
     var latlng = new google.maps.LatLng(48.555705,-122.960358);
