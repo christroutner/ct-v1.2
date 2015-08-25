@@ -4,35 +4,7 @@
 
   
   
-  app.controller('PrimaryController', function() {
-    
-    
-    //expansion_icon_toggle();
-    
-    /*
-    var pnlTitle = $('.panel-title')[0];
-    pnlTitle.on('show.bs.collapse', function() {
-      var imgFileName = 'blah';
-      debugger;
-      imgFileName = 'blah2';
-    });
-    */
-    
-    /*
-    $(document).ready(function(){
-      debugger;
-      $("#titleOverview").on("hide.bs.collapse", function(){
-        //$("i").html('<span class="glyphicon glyphicon-collapse-down"></span> Open');\
-        debugger;
-        alert('a');
-      });
-      $("#titleOverview").on("show.bs.collapse", function(){
-        //$("i").html('<span class="glyphicon glyphicon-collapse-up"></span> Close');
-        debugger;
-        alert('b');
-      });
-    });
-    */
+  app.controller('PrimaryController', function() {    
     
     function initFnc() {
     
@@ -121,16 +93,15 @@
       templateUrl: '../files/SPOT-BackEnd-Illustration.html'
     };
   });
-
-
-  /*
-  app.directive('panelIcons', function() {
+  
+  app.directive('illustrateGeoData', function() {
+    //debugger;
     return {
-      restrict: 'A',
-      templateUrl: 
-    }
+      restrict: 'E',
+      templateUrl: '../files/GeoData-BackEnd-Illustration.html'
+    };
   });
-  */
+
   
 })();
 

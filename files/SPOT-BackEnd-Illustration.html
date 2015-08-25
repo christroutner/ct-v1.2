@@ -3,7 +3,7 @@
 <div id='SPOTBackupIllustration' class='img-responsive center-block'> 
   <img src="../images/SPOT-Tracker-Illustrations1.jpg" class='img-responsive center-block'>
   <p class='text-center lead'>
-    Caption
+    Step 1) The EC2 Server runs a Node.js application that queries the SPOT server once per day.
   </p>
 </div>
 
@@ -21,13 +21,13 @@
       
       if(numState == 1) {
         $(imgCurrent).attr("src", "./images/SPOT-Tracker-Illustrations1.jpg");
-        $(caption).text('Step 1) The EC2 Server runs a Node.js application that queries the SPOT server once per day');
+        $(caption).text('Step 1) The EC2 Server runs a Node.js application that queries the SPOT server once per day.');
         numState++;
 
       
       } else if(numState == 2) {
         $(imgCurrent).attr("src", "./images/SPOT-Tracker-Illustrations2.jpg");
-        $(caption).text('Step 2) GPS data is downloaded as an XML file. The data is parsed, duplicate data thrown out, and new data appended to a CSV file.');
+        $(caption).text('Step 2) GPS data is downloaded as an XML file, parsed, and appended to a CSV file.');
         
         numState++;
        
