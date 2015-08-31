@@ -85,6 +85,9 @@
         <li><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseJavaScript" aria-expanded="true" aria-controls="collapseJavaScript">
           JavaScript
         </a></li>
+        <li><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseWebDev" aria-expanded="true" aria-controls="collapseWebDev">
+          Web-Dev
+        </a></li>
         <li><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEmbedded" aria-expanded="true" aria-controls="collapseEmbedded">
           Embedded
         </a></li>
@@ -115,12 +118,20 @@
           <!-- Selfie Image -->
           <img src='images/me.jpg' class='img-responsive center-block' alt='Chris Troutner' />
           <br>
+          <b><p class='text-center'>
+            <a href="files/troutner_resume_08_2015.pdf">Download Resume</a>
+          </p></b>
+          <br>
           <!-- Left Column Button Menu -->
           <div class='visible-md visible-lg'>
             <ul class='list-unstyled'>
               <li>
                 <a class="btn btn-primary" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseJavaScript" aria-expanded="false" aria-controls="collapseJavaScript">
                   JavaScript
+              </a></li><br>
+              <li>
+                <a class="btn btn-primary" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseWebDev" aria-expanded="false" aria-controls="collapseWebDev">
+                  Web Design
               </a></li><br>
               <li>
                 <a class="btn btn-primary" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEmbedded" aria-expanded="false" aria-controls="collapseEmbedded">
@@ -167,6 +178,23 @@
                 </div>
               </div>
             </div>
+            
+            <div class="panel panel-default" ng-init="PC.initCollapseIcon('#collapseWebDev')">
+              <div class="panel-heading" role="tab" id="headingWebDev">
+                <h1 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseWebDev" aria-expanded="false" aria-controls="collapseWebDev">
+                    <i class='glyphicon glyphicon-plus'></i>
+                    Web Design &amp; SEO
+                  </a>
+                </h1>
+              </div>
+              <div id="collapseWebDev" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingWebDev">
+                <div class="panel-body">
+                  <content-webdev></content-webdev>
+                </div>
+              </div>
+            </div>
+            
             <div class="panel panel-default" ng-init="PC.initCollapseIcon('#collapseEmbedded')">
               <div class="panel-heading" role="tab" id="headingEmbedded">
                 <h1 class="panel-title">

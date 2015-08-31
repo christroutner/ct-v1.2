@@ -79,6 +79,13 @@
     };
   });
   
+  app.directive('contentWebdev', function() {
+    return  {
+      restrict: 'E',
+      templateUrl: 'content-webdev.html'
+    };
+  });
+  
   app.directive('contentEmbedded', function() {
     return  {
       restrict: 'E',
