@@ -4,6 +4,8 @@ body{
   font-weight: 400;
 	font-size: 18px;
 	color: #333;
+  //position needed to use Scrollspy
+  position: relative;
 }
 h1{
 	font-size: 40px;

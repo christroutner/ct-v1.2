@@ -61,7 +61,7 @@
   </style>
 </head>
   
-<body ng-controller='PrimaryController as PC'>
+<body ng-controller='PrimaryController as PC' data-spy="scroll" data-target=".navbar" data-offset="50">
   <header class='navbar navbar-default navbar-fixed-top'>
     <nav class='container' role='navigation'>
       <div class='navbar-header'>
@@ -98,7 +98,7 @@
     </nav>
   </header>
 
-  <section>
+  <section id="#scrollspysection">
     <div class='container'>
 
       <!-- Need to add a row of space so that the static nav bar doesn't bleed into the Container. Not sure if <br> is the best html to use anymore. -->
