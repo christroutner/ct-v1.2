@@ -5,6 +5,7 @@
   var app = angular.module('mainPage', []);
 
   //Function to scroll to a designated tag.
+  //Source: http://stackoverflow.com/questions/1586341/how-can-i-scroll-to-a-specific-location-on-the-page-using-jquery
   $.fn.scrollView = function () {
     return this.each(function () {
         //debugger;
